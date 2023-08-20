@@ -1,6 +1,6 @@
 ﻿namespace CalculatorStudent.Operations
 {
-    public class CalcOperations
+    public class CalcOperations : CalcOperationsBase
     {
         public double Calculation(double Number1d, double Number2d, EnumOperationType OperationType)
         {
@@ -21,26 +21,6 @@
                 return Multiply(Number1d, Number2d);
             }
             return 0;
-        }
-
-        private static double Multiply(double Number1d, double Number2d)
-        {
-            return Number1d * Number2d;
-        }
-
-        private static double Divide(double Number1d, double Number2d)
-        {
-            return Number1d / Number2d;
-        }
-
-        private static double Subtract(double Number1d, double Number2d)
-        {
-            return Number1d - Number2d;
-        }
-
-        private static double Add(double Number1d, double Number2d)
-        {
-            return Number1d + Number2d;
         }
     }
 }

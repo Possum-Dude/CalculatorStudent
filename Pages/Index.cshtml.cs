@@ -13,7 +13,7 @@ namespace CalculatorStudent.Pages
         //this calls in the calculation from calcoperations.cs
         public CalcOperations? calc { get; set; }
         //this calls in all the information from the calculator.cs class
-        public Calculator calculator { get; set; }
+        public Calculator? calculator { get; set; }
 
         public string? Operation { get; set; }
         [Display(Name = "Operation Type")]

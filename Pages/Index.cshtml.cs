@@ -2,6 +2,7 @@
 using CalculatorStudent.Operations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
 
 namespace CalculatorStudent.Pages
 {
@@ -13,6 +14,15 @@ namespace CalculatorStudent.Pages
         public CalcOperations? calc { get; set; }
         //this calls in all the information from the calculator.cs class
         public Calculator calculator { get; set; }
+
+        public string? Operation { get; set; }
+        [Display(Name = "Operation Type")]
+        public EnumOperationType OperationType { get; set; }
+
+        public void OnGet()
+        {
+
+        }
 
         public void OnPostAsync()
         {
